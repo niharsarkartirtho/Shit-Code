@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="formcontainer">
+            <h3 id="heading">Curenccy Converter</h3>
+            <input type="text" id="input" value="1" min="1">
+            <span id="error-msg"></span>
+            <div class="options">
+                <div class="fromclass">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="" id="fromimg">
+                    <select name="" id="from">
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+                <img src="arrow.png" id="arrow" alt="arrow">
+                <div class="toclass">
+                    <img src="https://flagsapi.com/BD/flat/64.png" alt="" id="toimg">
+                    <select name="" id="to">
+                        <option value="BDT">BDT</option>
+                    </select>
+                </div>
+            </div>
+            <label id="msg">Converted total is :</label>
+            <input type="submit" id="submitbtn" value="Click here">
+        </form>
+    </div>
+    <script src="country-currencies.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
